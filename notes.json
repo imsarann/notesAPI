@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1a2b3c4d",
+    "title": "Buy groceries",
+    "body": "Milk, eggs, bread, bananas",
+    "tags": ["shopping", "errands"],
+    "createdAt": "2025-09-10T08:30:00.000Z",
+    "updatedAt": "2025-09-10T08:30:00.000Z"
+  },
+  {
+    "id": "2b3c4d5e",
+    "title": "Finish API project",
+    "body": "Complete CRUD endpoints, add validation, and write tests.",
+    "tags": ["work", "coding", "api"],
+    "createdAt": "2025-09-11T09:15:00.000Z",
+    "updatedAt": "2025-09-11T09:15:00.000Z"
+  },
+  {
+    "id": "3c4d5e6f",
+    "title": "Read networking chapter",
+    "body": "Focus on OSI model and TCP/IP stack for upcoming exam.",
+    "tags": ["study", "college"],
+    "createdAt": "2025-09-12T10:45:00.000Z",
+    "updatedAt": "2025-09-12T10:45:00.000Z"
+  },
+  {
+    "id": "4d5e6f7g",
+    "title": "Plan weekend trip",
+    "body": "Decide on location, book train tickets, and pack essentials.",
+    "tags": ["personal", "travel"],
+    "createdAt": "2025-09-13T14:20:00.000Z",
+    "updatedAt": "2025-09-13T14:20:00.000Z"
+  },
+  {
+    "id": "5e6f7g8h",
+    "title": "Workout routine",
+    "body": "Monday: Chest & Triceps, Wednesday: Back & Biceps, Friday: Legs",
+    "tags": ["fitness", "health"],
+    "createdAt": "2025-09-14T07:00:00.000Z",
+    "updatedAt": "2025-09-14T07:00:00.000Z"
+  },
+  {
+    "id": "6f7g8h9i",
+    "title": "Call Mom",
+    "body": "Check in with family on Sunday evening.",
+    "tags": ["personal", "family"],
+    "createdAt": "2025-09-14T18:30:00.000Z",
+    "updatedAt": "2025-09-14T18:30:00.000Z"
+  },
+  {
+    "id": "7g8h9i0j",
+    "title": "Research Web3",
+    "body": "Look into Ethereum vs Solana smart contracts.",
+    "tags": ["coding", "web3", "blockchain"],
+    "createdAt": "2025-09-15T06:15:00.000Z",
+    "updatedAt": "2025-09-15T06:15:00.000Z"
+  },
+  {
+    "id": "8h9i0j1k",
+    "title": "Fix bug in React project",
+    "body": "Check why state is not updating in useEffect.",
+    "tags": ["work", "react", "coding"],
+    "createdAt": "2025-09-15T09:50:00.000Z",
+    "updatedAt": "2025-09-15T09:50:00.000Z"
+  }
+]
