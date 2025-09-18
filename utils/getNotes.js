@@ -29,7 +29,6 @@ export function createNotes(notes, note){
     newnote["title"] = note.title;
     newnote["body"] = note.body;
     newnote["tags"] = note.tags;
-    // newnote["id"] = generateId();
     newnote["createdAt"] = isoString,
     newnote["updatedAt"] = isoString,
     console.log(newnote)
@@ -41,6 +40,50 @@ export function createNotes(notes, note){
         console.error("Error writing files: ", err)
     }
     return newnote
+}
+
+
+export function updateNote(id, notes, note){
+    // console.log(typeof note)
+    const updated_note = [] 
+    for(const n of notes ){
+        // console.log("hello", n.id)
+        if(n.id == id){
+            const now = new Date();
+            const isoString = now.toISOString();
+            n["title"] = note.title;
+            n["body"] = note.body;
+            n["tags"] = note.tags;
+            n["updatedAt"] = isoString
+            updated_note.push(n);
+            break;
+        }
+    }
+    // for(const n of notes){
+    //     if(n.id == id){
+    //         console.log("check updated notes",n)
+    //     }
+    // }
+    try{
+        console.log("Writing in notes ")
+        fs.writeFileSync("notes.json", JSON.stringify(notes, null, 2), "utf-8")
+        return updated_note;
+    }catch(err){
+        console.error("Error in writing file :", err)
+    }
+}
+
+export function deleteNotes(id, notes){
+    const idx = notes.findIndex(note => note.id === id);
+    if (idx === -1) return false;
+    notes.splice(idx, 1);
+    try{
+        fs.writeFileSync("notes.json", JSON.stringify(notes, null, 2), "utf-8")
+        return true;
+    } catch(err){
+        console.error("Error in writing file :", err)
+        return false;
+    }
 }
 
 function generateId(){
